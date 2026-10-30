@@ -37,16 +37,20 @@ export default function Navbar({ activeTab, setActiveTab }) {
         <a 
           href="#home" 
           className="brand-logo" 
-          aria-label="Fórmula IF Puma Racing - Página Inicial"
+          aria-label="Puma Racing - Fórmula IF IFBA"
           onClick={(e) => {
             e.preventDefault()
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
         >
-          <PumaLogoIcon size={42} />
+          <img 
+            src="/images/puma-logo.png" 
+            alt="Logo Puma Racing" 
+            className="brand-img"
+          />
           <div className="brand-text">
-            <span className="brand-title">FÓRMULA IF</span>
-            <span className="brand-sub">PUMA RACING • IFBA</span>
+            <span className="brand-super">FÓRMULA IF • IFBA</span>
+            <span className="brand-main">PUMA RACING</span>
           </div>
         </a>
 

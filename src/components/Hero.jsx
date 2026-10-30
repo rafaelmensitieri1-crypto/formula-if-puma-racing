@@ -20,7 +20,7 @@ export default function Hero({ onNavigate }) {
             </span>
 
             <h1 id="hero-title" className="hero-giant-title">
-              FÓRMULA IF <br />
+              <span className="hero-prefix-title">FÓRMULA IF</span>
               <span className="puma-text-accent">PUMA RACING</span>
             </h1>
 

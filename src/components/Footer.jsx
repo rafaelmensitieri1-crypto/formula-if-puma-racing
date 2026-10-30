@@ -11,10 +11,14 @@ export default function Footer({ onNavigate }) {
         {/* Brand Column */}
         <div className="footer-brand-col">
           <div className="footer-brand-header">
-            <PumaLogoIcon size={36} />
+            <img 
+              src="/images/puma-logo.png" 
+              alt="Logo Puma Racing" 
+              className="footer-brand-img"
+            />
             <div>
-              <span className="footer-brand-name">FÓRMULA IF</span>
-              <span className="footer-brand-sub">PUMA RACING • IFBA</span>
+              <span className="footer-brand-super">FÓRMULA IF • IFBA</span>
+              <span className="footer-brand-main">PUMA RACING</span>
             </div>
           </div>
           <p className="footer-bio">

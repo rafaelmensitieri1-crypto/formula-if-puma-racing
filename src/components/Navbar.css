@@ -31,25 +31,40 @@
   cursor: pointer;
 }
 
+.brand-img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 0 14px rgba(225, 29, 72, 0.45);
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
 }
 
-.brand-title {
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+.brand-super {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+  text-transform: uppercase;
   line-height: 1.1;
 }
 
-.brand-sub {
-  font-size: 0.725rem;
-  font-weight: 800;
-  color: var(--color-primary);
-  letter-spacing: 0.1em;
+.brand-main {
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  line-height: 1.1;
   text-transform: uppercase;
+}
+
+.brand-logo:hover .brand-main {
+  color: var(--color-primary-hover);
 }
 
 /* Desktop Navigation */

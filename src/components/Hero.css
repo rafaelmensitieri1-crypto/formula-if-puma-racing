@@ -97,18 +97,27 @@
 }
 
 .hero-giant-title {
-  font-size: clamp(2.75rem, 6.5vw, 4.5rem);
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
 }
 
+.hero-prefix-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
 .puma-text-accent {
+  font-size: clamp(3rem, 7.5vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
   color: #e11d48;
-  text-shadow: 0 4px 25px rgba(225, 29, 72, 0.4);
+  text-shadow: 0 6px 35px rgba(225, 29, 72, 0.55);
 }
 
 .hero-tagline {
