@@ -25,8 +25,9 @@ export default function Hero({ onNavigate }) {
             </h1>
 
             <p className="hero-tagline">
-              Engenharia automobilística, inovação e alta velocidade no interior da Bahia.
-              Projetamos e construímos protótipos de corrida monoposto para a maior competição universitária do mundo.
+              Engenharia automobilística, inovação e aprendizado prático no interior da Bahia.
+              Nossa equipe está atualmente em plena fase de <strong>construção do primeiro protótipo monoposto</strong> do IFBA, 
+              projetado em torno do motor <strong>Honda CB 250 Twister</strong>.
             </p>
 
             <div className="hero-cta-row">
@@ -55,7 +56,7 @@ export default function Hero({ onNavigate }) {
               <span className="visual-dot red"></span>
               <span className="visual-dot yellow"></span>
               <span className="visual-dot green"></span>
-              <span className="visual-caption">IFBA JEQUIÉ • MONOPOSTO COMBUSTION #01</span>
+              <span className="visual-caption">IFBA JEQUIÉ • PROTÓTIPO EM CONSTRUÇÃO</span>
             </div>
 
             <div className="visual-image-wrapper">
@@ -67,7 +68,7 @@ export default function Hero({ onNavigate }) {
               <div className="visual-gradient-scrim"></div>
               <div className="visual-floating-badge">
                 <FlameIcon size={18} />
-                <span>PUMA POWER • 600cc</span>
+                <span>MOTOR CB 250 TWISTER • EM CONSTRUÇÃO</span>
               </div>
             </div>
           </div>
@@ -115,22 +116,24 @@ export default function Hero({ onNavigate }) {
             <span className="split-panel-title-red">SOBRE A EQUIPE</span>
             <h3 className="team-headline">FÓRMULA IF PUMA RACING</h3>
             <p className="team-bio">
-              Formada no Instituto Federal da Bahia (Campus Jequié), a equipe reúne talentos da engenharia e tecnologia
-              empenhados em criar soluções de ponta em powertrain a combustão, aerodinâmica e telemetria automotiva.
+              Formada no Instituto Federal da Bahia (Campus Jequié), a equipe está atualmente em plena fase de 
+              <strong> construção do primeiro protótipo</strong> da instituição. O monoposto é projetado com 
+              chassi tubular spaceframe e utilizará a motorização <strong>Honda CB 250 Twister</strong>, 
+              priorizando confiabilidade mecânica, baixo peso e excelência formativa.
             </p>
 
             <div className="team-stats-strip">
               <div className="mini-stat">
-                <span className="mini-val">600cc</span>
-                <span className="mini-lbl">Combustão 4T</span>
+                <span className="mini-val">CB 250</span>
+                <span className="mini-lbl">Twister 4T OHC</span>
               </div>
               <div className="mini-stat">
-                <span className="mini-val">215 kg</span>
-                <span className="mini-lbl">Spaceframe 4130</span>
+                <span className="mini-val">Spaceframe</span>
+                <span className="mini-lbl">Aço SAE 4130</span>
               </div>
               <div className="mini-stat">
-                <span className="mini-val">3.9s</span>
-                <span className="mini-lbl">0-100 km/h</span>
+                <span className="mini-val">Em Obras</span>
+                <span className="mini-lbl">Fase de Construção</span>
               </div>
             </div>
           </div>

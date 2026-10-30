@@ -9,6 +9,8 @@ Site institucional de alto desempenho para a equipe de Fórmula Student a Combus
 - **Hub de Links:** [linktr.ee/formulaif](https://linktr.ee/formulaif)
 - **Localização:** IFBA Campus Jequié - Bahia, Brasil
 - **Modalidade:** Fórmula SAE Brasil Combustion (Veículo Monoposto a Combustão)
+- **Status do Protótipo:** Em Construção / Fase de Manufatura
+- **Motorização:** Honda CB 250F Twister (Monocilíndrico 4T OHC 4V)
 
 ---
 

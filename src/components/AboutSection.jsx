@@ -7,15 +7,15 @@ export default function AboutSection() {
 
   const subsystems = {
     powertrain: {
-      title: 'Powertrain & Admissão',
+      title: 'Powertrain (Motor CB 250 Twister)',
       icon: <FlameIcon size={24} />,
-      tagline: 'O coração pulsante do Puma Racing',
-      description: 'Nosso trem de força utiliza motor a combustão de alta rotação com coletor de admissão e restritor de ar de 20mm otimizados via simulação computacional de dinâmica de fluidos (CFD).',
+      tagline: 'Monocilíndrico 250cc 4T com 4 válvulas OHC',
+      description: 'O protótipo em construção utilizará o conjunto motriz da Honda CB 250F Twister (monocilíndrico 4T, 249,5 cm³, arrefecimento a ar com radiador de óleo). O motor alia alta confiabilidade mecânica, baixo peso e excelente entrega de torque em baixas e médias rotações, ideal para as exigências técnicas da Fórmula SAE.',
       specs: [
-        'Restritor de admissão de 20mm regulamentar SAE',
-        'Injeção eletrônica com mapa de combustão customizado',
-        'Sistema de arrefecimento redimensionado com duto direcionador',
-        'Escapamento dimensionado em inox para torque linear'
+        'Motor Honda CB 250F Twister (249,5 cm³, 4 válvulas OHC)',
+        'Câmbio sequencial integrado de 6 velocidades',
+        'Injeção eletrônica com duto de admissão e restritor calculados',
+        'Sistema de arrefecimento e escapamento dimensionados para o chassi'
       ]
     },
     chassis: {
@@ -79,8 +79,9 @@ export default function AboutSection() {
           </h2>
           <p className="section-description">
             Fundada por alunos e professores do <strong>IFBA (Instituto Federal da Bahia - Campus Jequié)</strong>,
-            a equipe representa o talento, a determinação e a força da engenharia baiana na competição de 
-            monopostos mais prestigiada do ambiente acadêmico internacional: o <strong>Fórmula SAE Combustion</strong>.
+            a equipe está atualmente na <strong>fase de construção e manufatura de seu primeiro monoposto</strong>,
+            impulsionado pelo motor <strong>Honda CB 250 Twister</strong>, preparando-se para representar o talento e 
+            a inovação da engenharia baiana na competição <strong>Fórmula SAE Brasil Combustion</strong>.
           </p>
         </div>
 

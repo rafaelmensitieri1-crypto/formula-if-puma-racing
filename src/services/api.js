@@ -1,14 +1,17 @@
-// Exemplo de serviço para chamadas de API ou dados mockados
+// Serviço de dados do protótipo Fórmula IF Puma Racing
 export const getCarSpecs = async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
-        potencia: "85 cv",
-        peso: "210 kg",
-        aceleracao: "0-100 km/h em 3.8s",
-        velocidadeMaxima: "140 km/h"
+        status: "Em Construção / Manufatura",
+        motor: "Honda CB 250F Twister (Monocilíndrico 4T OHC 4V)",
+        cilindrada: "249,5 cm³",
+        potenciaEstimada: "22,6 cv a 7.500 rpm",
+        torqueEstimado: "2,28 kgf.m a 6.000 rpm",
+        chassi: "Treliça Tubular Spaceframe (Aço SAE 4130)",
+        cambio: "6 velocidades sequencial",
+        sede: "IFBA Campus Jequié - BA"
       })
-    }, 500)
+    }, 300)
   })
 }
-
