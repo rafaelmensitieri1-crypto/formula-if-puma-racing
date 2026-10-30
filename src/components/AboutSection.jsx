@@ -1,72 +1,105 @@
 import React, { useState } from 'react'
-import { FlameIcon, GaugeIcon, ShieldIcon, UsersIcon, CheckIcon } from './Icons'
+import { FlameIcon, GaugeIcon, ShieldIcon, UsersIcon, CheckIcon, WindIcon, FileTextIcon, CameraIcon } from './Icons'
 import './AboutSection.css'
 
 export default function AboutSection() {
-  const [activeSubsystem, setActiveSubsystem] = useState('powertrain')
+  const [activeSector, setActiveSector] = useState('powertrain')
 
-  const subsystems = {
+  const sectors = {
     powertrain: {
-      title: 'Powertrain (Motor CB 250 Twister)',
+      tabLabel: 'Powertrain',
+      title: 'Setor de Powertrain',
       icon: <FlameIcon size={24} />,
-      tagline: 'Monocilíndrico 250cc 4T com 4 válvulas OHC',
-      description: 'O protótipo em construção utilizará o conjunto motriz da Honda CB 250F Twister (monocilíndrico 4T, 249,5 cm³, arrefecimento a ar com radiador de óleo). O motor alia alta confiabilidade mecânica, baixo peso e excelente entrega de torque em baixas e médias rotações, ideal para as exigências técnicas da Fórmula SAE.',
+      tagline: 'Motor Honda CB 250F Twister & Trem de Força',
+      description: 'Responsável pelo coração propulsor do protótipo: o motor Honda CB 250F Twister (monocilíndrico 4 tempos OHC de 4 válvulas, 249,5 cm³). A equipe projeta o sistema de admissão com restritor de ar normatizado, sistema de escape aliviado em inox, linha de combustível, arrefecimento a ar/óleo e transmissão sequencial de 6 velocidades por corrente.',
       specs: [
-        'Motor Honda CB 250F Twister (249,5 cm³, 4 válvulas OHC)',
+        'Motorização: Honda CB 250F Twister (249,5 cm³)',
         'Câmbio sequencial integrado de 6 velocidades',
-        'Injeção eletrônica com duto de admissão e restritor calculados',
-        'Sistema de arrefecimento e escapamento dimensionados para o chassi'
+        'Coletor de admissão e restritor calculados para o regulamento SAE',
+        'Sistema de arrefecimento e escapamento sob medida para o chassi'
       ]
     },
-    chassis: {
-      title: 'Chassi & Estrutura Spaceframe',
+    chassi: {
+      tabLabel: 'Chassi',
+      title: 'Setor de Chassi & Estrutura',
       icon: <ShieldIcon size={24} />,
-      tagline: 'Segurança e rigidez torcional calculada',
-      description: 'Estrutura tubular em treliça espacial feita com tubos de aço liga SAE 4130. Rigidez torcional calculada por elementos finitos (FEA) garantindo máxima precisão para o conjunto de suspensão e célula de sobrevivência do piloto.',
+      tagline: 'Treliça Tubular Spaceframe em Aço Liga SAE 4130',
+      description: 'Projeta e constrói a espinha dorsal do monoposto. Dimensiona a treliça espacial tubular garantindo máxima rigidez torcional para apoio da suspensão e total segurança para o piloto, incluindo célula de sobrevivência, santantônios frontal e principal, e atenuador de impacto (Crash-box) testado e certificado.',
       specs: [
-        'Treliça tubular em aço cromo-molibdênio SAE 4130',
-        'Crash-box absorvedor de energia de impacto testado',
-        'Célula de sobrevivência e santantônio principal normatizados',
-        'Distribuição de peso 48% dianteira / 52% traseira'
-      ]
-    },
-    suspensao: {
-      title: 'Suspensão & Direção',
-      icon: <GaugeIcon size={24} />,
-      tagline: 'Aderência mecânica e precisão nas curvas',
-      description: 'Geometria Duplo A (Double Wishbone) com acionamento push-rod nos quatro cantos. Amortecedores ajustáveis de 2 vias e barras estabilizadoras ajustáveis para acerto fino em pistas travadas de autocross.',
-      specs: [
-        'Geometria Double Wishbone independente',
-        'Sistema Push-rod com rockers em alumínio usinado',
-        'Montantes dianteiros e traseiros aliviados em CNC',
-        'Caixa de direção rápida com geometria Ackerman'
+        'Tubulação em aço cromo-molibdênio SAE 4130 com soldagem especializada',
+        'Simulação estrutural via Elementos Finitos (FEA) para otimização de peso',
+        'Célula de sobrevivência, santantônios e proteções regulamentares',
+        'Atenuador de impacto frontal (Crash-box) absorvedor de energia'
       ]
     },
     eletronica: {
-      title: 'Telemetria & Elétrica',
+      tabLabel: 'Eletrônica',
+      title: 'Setor de Eletrônica & Telemetria',
       icon: <GaugeIcon size={24} />,
-      tagline: 'Dados em tempo real no box da equipe',
-      description: 'Chicote elétrico com conectores selados padrão militar/automotivo. Central de aquisição de dados enviando telemetria ao vivo para a equipe de box durante treinos e provas dinâmicas.',
+      tagline: 'Sistemas Elétricos, Sensores e Aquisição de Dados',
+      description: 'Concebe toda a arquitetura elétrica do veículo: chicote elétrico de alta durabilidade com conectores automotivos selados, sensores de monitoramento de motor (temperatura, rotação, pressão), circuitos de corte de segurança obrigatórios (Kill Switch, Brake Over-Travel Switch) e sistema de telemetria.',
       specs: [
-        'Módulo de telemetria sem fio com transmissão ao vivo',
-        'Painel digital multifuncional no volante para o piloto',
-        'Sensores de rotação nas rodas, temperatura de freios e pressão de óleo',
-        'Chicote modular de rápida desconexão e manutenção'
+        'Chicote elétrico modular com proteção contra calor e vibração',
+        'Sensores para monitoramento de rotação, temperatura de óleo e marcha',
+        'Circuitos de segurança de emergência e luz de freio conforme norma SAE',
+        'Desenvolvimento de telemetria e display informativo para o piloto'
       ]
     },
-    gestao: {
-      title: 'Gestão, Custos & Marketing',
-      icon: <UsersIcon size={24} />,
-      tagline: 'A engenharia por trás do negócio da equipe',
-      description: 'Uma equipe de corrida universitária também opera como uma empresa de engenharia. Gerenciamos orçamentos, relatórios de custos detalhados (BOM) e apresentações de plano de negócios para jurados da SAE.',
+    design_aero: {
+      tabLabel: 'Design e Aerodinâmica',
+      title: 'Setor de Design & Aerodinâmica',
+      icon: <WindIcon size={24} />,
+      tagline: 'Carenagem, Otimização de Fluxo e Identidade Visual',
+      description: 'Responsável pelo estudo aerodinâmico e desenho das superfícies externas do protótipo. Realiza simulações computacionais de dinâmica dos fluidos (CFD) para minimizar o arrasto aerodinâmico, direcionar o fluxo de ar para os radiadores e criar uma carenagem esportiva, agressiva e que estampa a identidade visual do Puma Racing.',
       specs: [
-        'Relatório de manufatura e custo (Cost & Manufacturing Event)',
-        'Plano de negócios e pitch de investimento para jurados',
-        'Comunicação estratégica no Instagram oficial @formulaifsae',
-        'Relacionamento direto e transparência com patrocinadores'
+        'Estudos de dinâmica de fluidos computacional (CFD)',
+        'Modelagem de carenagem frontal, bico e laterais (Sidepods)',
+        'Dutos direcionadores de ar para refrigeração do motor e óleo',
+        'Identidade visual esportiva e aplicação das cores oficiais da equipe'
+      ]
+    },
+    freio_suspensao: {
+      tabLabel: 'Freio e Suspensão',
+      title: 'Setor de Freio & Suspensão',
+      icon: <GaugeIcon size={24} />,
+      tagline: 'Geometria Duplo A, Direção e Dinâmica de Pista',
+      description: 'Desenvolve a dinâmica de contato do veículo com o asfalto. Modela a geometria de suspensão independente Duplo A (Double Wishbone) com acionamento push-rod nos quatro cantos, sistema de direção rápida com geometria Ackerman, e o dimensionamento do sistema duplo e independente de freios a disco hidráulicos.',
+      specs: [
+        'Geometria Double Wishbone independente dianteira e traseira',
+        'Amortecedores ajustáveis de alta sensibilidade com rockers usinados',
+        'Circuito duplo e independente de freios a disco nas 4 rodas',
+        'Caixa de direção rápida projetada para provas de autocross'
+      ]
+    },
+    comunicacoes: {
+      tabLabel: 'Comunicações',
+      title: 'Setor de Comunicações & Mídia',
+      icon: <CameraIcon size={24} />,
+      tagline: 'Voz da Equipe, Redes Sociais e Cobertura de Eventos',
+      description: 'Gerencia a presença e a comunicação da Puma Racing. Cuida do perfil oficial do Instagram (@formulaifsae), registro audiovisual das etapas de fabricação na oficina, divulgação científica em eventos como a SECITEC e Pint of Science, relacionamento com a imprensa e criação de materiais promocionais e de estande.',
+      specs: [
+        'Gestão de conteúdo e engajamento no Instagram @formulaifsae',
+        'Produção de fotos, reels e bastidores de fabricação da oficina',
+        'Divulgação científica e institucional do IFBA Campus Jequié',
+        'Assessoria de comunicação e cobertura de feiras e exposições'
+      ]
+    },
+    secretaria: {
+      tabLabel: 'Secretaria',
+      title: 'Setor de Secretaria & Administração',
+      icon: <FileTextIcon size={24} />,
+      tagline: 'Gestão de Membros, Documentação e Organização Interna',
+      description: 'Garante o suporte administrativo e institucional da equipe. É encarregada da gestão de membros, processos seletivos, atas de reuniões, controle de presença, cronograma de entregas, comunicação com a reitoria e coordenação do IFBA Campus Jequié, além de documentações e formulários da Fórmula SAE Brasil.',
+      specs: [
+        'Coordenação e acompanhamento de processos seletivos',
+        'Controle documental, relatórios e atas oficiais da equipe',
+        'Gestão de prazos e alinhamento institucional junto ao IFBA',
+        'Apoio à diretoria geral na organização interna e cronogramas'
       ]
     }
   }
+
+  const current = sectors[activeSector]
 
   return (
     <section className="section-wrapper about-section" id="apresentacao" aria-labelledby="about-title">
@@ -104,8 +137,8 @@ export default function AboutSection() {
             </div>
             <h3 className="pillar-title">Espírito Competitivo</h3>
             <p className="pillar-text">
-              O Puma simboliza agilidade, potência e visão aguçada. Cada parafuso, tubo de chassi e curva do veículo 
-              é pensado para entregar o melhor tempo em pista com total conformidade regulamentar.
+              O Puma simboliza agilidade, potência e visão aguçada. Cada tubo do chassi, suporte e peça do veículo 
+              é pensado para entregar confiabilidade e tempo em pista com conformidade regulamentar.
             </p>
           </div>
 
@@ -121,23 +154,23 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Subsystems Interactive Explorer */}
+        {/* Setores do Projeto Interactive Explorer */}
         <div className="subsystems-container">
           <div className="subsystems-header">
             <div>
-              <span className="sub-badge">ENGENHARIA APLICADA</span>
-              <h3 className="subsystems-heading">Subsistemas do Protótipo</h3>
+              <span className="sub-badge">ESTRUTURA ORGANIZACIONAL</span>
+              <h3 className="subsystems-heading">Setores do Projeto</h3>
             </div>
             <p className="subsystems-intro">
-              Conheça as áreas de engenharia que compõem o nosso veículo de combustão.
+              Conheça as áreas de engenharia, comunicação e gestão que compõem a equipe Fórmula IF Puma Racing.
             </p>
           </div>
 
-          {/* Navigation Pills */}
-          <div className="subsystems-tabs" role="tablist" aria-label="Subsistemas da equipe">
-            {Object.keys(subsystems).map((key) => {
-              const item = subsystems[key]
-              const isSelected = activeSubsystem === key
+          {/* Navigation Pills for all 7 sectors */}
+          <div className="subsystems-tabs" role="tablist" aria-label="Setores do projeto">
+            {Object.keys(sectors).map((key) => {
+              const item = sectors[key]
+              const isSelected = activeSector === key
               return (
                 <button
                   key={key}
@@ -145,32 +178,32 @@ export default function AboutSection() {
                   role="tab"
                   aria-selected={isSelected}
                   className={`subsystem-tab-btn ${isSelected ? 'active' : ''}`}
-                  onClick={() => setActiveSubsystem(key)}
+                  onClick={() => setActiveSector(key)}
                 >
-                  {item.title.split('&')[0]}
+                  {item.tabLabel}
                 </button>
               )
             })}
           </div>
 
-          {/* Active Subsystem Panel */}
+          {/* Active Sector Panel */}
           <div className="subsystem-detail-card" role="tabpanel">
             <div className="detail-top">
               <div className="detail-title-group">
-                <span className="detail-icon">{subsystems[activeSubsystem].icon}</span>
+                <span className="detail-icon">{current.icon}</span>
                 <div>
-                  <h4 className="detail-name">{subsystems[activeSubsystem].title}</h4>
-                  <span className="detail-tagline">{subsystems[activeSubsystem].tagline}</span>
+                  <h4 className="detail-name">{current.title}</h4>
+                  <span className="detail-tagline">{current.tagline}</span>
                 </div>
               </div>
             </div>
 
-            <p className="detail-desc">{subsystems[activeSubsystem].description}</p>
+            <p className="detail-desc">{current.description}</p>
 
             <div className="detail-specs-box">
-              <h5 className="specs-title">DESTAQUES TÉCNICOS & NORMA SAE:</h5>
+              <h5 className="specs-title">RESPONSABILIDADES & DESTAQUES TÉCNICOS:</h5>
               <ul className="specs-list">
-                {subsystems[activeSubsystem].specs.map((spec, i) => (
+                {current.specs.map((spec, i) => (
                   <li key={i} className="spec-item">
                     <span className="spec-check"><CheckIcon size={16} /></span>
                     <span>{spec}</span>
@@ -184,4 +217,3 @@ export default function AboutSection() {
     </section>
   )
 }
-

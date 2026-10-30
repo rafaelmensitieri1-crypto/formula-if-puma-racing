@@ -148,8 +148,29 @@ export function CircuitTrackIcon({ className = 'track-icon', size = 110 }) {
         strokeLinecap="round" 
         strokeLinejoin="round"
       />
-      {/* Start/Finish line */}
       <line x1="50" y1="60" x2="50" y2="70" stroke="#FFFFFF" strokeWidth="2.5" strokeDasharray="2 2" />
+    </svg>
+  )
+}
+
+export function WindIcon({ className = 'icon', size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path>
+      <path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path>
+      <path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path>
+    </svg>
+  )
+}
+
+export function FileTextIcon({ className = 'icon', size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+      <path d="M10 9H8"></path>
+      <path d="M16 13H8"></path>
+      <path d="M16 17H8"></path>
     </svg>
   )
 }
