@@ -49,7 +49,7 @@ function App() {
         <SponsorsSection onSelectSponsorTier={handleSelectSponsorTier} />
 
         {/* 4. Contatos do Projeto */}
-        <ContactSection prefilledSubject={selectedSponsorTier} />
+        <ContactSection />
       </main>
 
       {/* Project Footer */}
