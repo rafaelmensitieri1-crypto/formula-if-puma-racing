@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronRightIcon, CircuitTrackIcon, FlameIcon, InstagramIcon } from './Icons'
+import { ChevronRightIcon, FlameIcon, InstagramIcon } from './Icons'
 import './Hero.css'
 
 export default function Hero({ onNavigate }) {
@@ -74,67 +74,29 @@ export default function Hero({ onNavigate }) {
           </div>
         </div>
 
-        {/* Lower Hero: Split Ribbon Card (Directly Modeled on Dribbble Layout) */}
-        <div className="dribbble-split-card">
-          {/* Left Part: White Card with Event Details & Track Map */}
-          <div className="split-left-panel">
-            <div className="split-header-row">
-              <span className="split-panel-title">PRÓXIMOS EVENTOS</span>
-              <span className="split-date-tag">23 A 31 DE OUTUBRO • 2026</span>
+        {/* Lower Hero: Team Presentation & Technical Stats */}
+        <div className="hero-team-card">
+          <span className="team-kicker-red">SOBRE A EQUIPE</span>
+          <h3 className="team-headline">FÓRMULA IF PUMA RACING</h3>
+          <p className="team-bio">
+            Formada no Instituto Federal da Bahia (Campus Jequié), a equipe está atualmente em plena fase de 
+            <strong> construção do primeiro protótipo</strong> da instituição. O monoposto é projetado com 
+            chassi tubular spaceframe e utilizará a motorização <strong>Honda CB 250 Twister</strong>, 
+            priorizando confiabilidade mecânica, baixo peso e excelência formativa.
+          </p>
+
+          <div className="team-stats-strip">
+            <div className="mini-stat">
+              <span className="mini-val">CB 250</span>
+              <span className="mini-lbl">Twister 4T OHC</span>
             </div>
-
-            <div className="split-event-body">
-              <div className="track-map-wrapper" aria-hidden="true">
-                <CircuitTrackIcon size={120} />
-              </div>
-              <div className="event-info-box">
-                <h3 className="event-title">SECITEC & EXPO FÓRMULA IF</h3>
-                <p className="event-location">IFBA Campus Jequié - Bahia • Entrada Franca</p>
-                <p className="event-desc">
-                  Demonstração pública do monoposto, estande técnico e simulador de pilotagem aberto ao público.
-                </p>
-                <button
-                  type="button"
-                  className="btn-event-details"
-                  onClick={() => onNavigate('fotos')}
-                >
-                  Ver Fotos do Evento
-                  <ChevronRightIcon size={15} />
-                </button>
-              </div>
+            <div className="mini-stat">
+              <span className="mini-val">Spaceframe</span>
+              <span className="mini-lbl">Aço SAE 4130</span>
             </div>
-          </div>
-
-          {/* Center Divider: Diagonal Racing Slashes (Red & White) */}
-          <div className="split-diagonal-divider" aria-hidden="true">
-            <div className="racing-slash white-slash"></div>
-            <div className="racing-slash red-slash"></div>
-          </div>
-
-          {/* Right Part: Dark Charcoal Card with About the Team */}
-          <div className="split-right-panel">
-            <span className="split-panel-title-red">SOBRE A EQUIPE</span>
-            <h3 className="team-headline">FÓRMULA IF PUMA RACING</h3>
-            <p className="team-bio">
-              Formada no Instituto Federal da Bahia (Campus Jequié), a equipe está atualmente em plena fase de 
-              <strong> construção do primeiro protótipo</strong> da instituição. O monoposto é projetado com 
-              chassi tubular spaceframe e utilizará a motorização <strong>Honda CB 250 Twister</strong>, 
-              priorizando confiabilidade mecânica, baixo peso e excelência formativa.
-            </p>
-
-            <div className="team-stats-strip">
-              <div className="mini-stat">
-                <span className="mini-val">CB 250</span>
-                <span className="mini-lbl">Twister 4T OHC</span>
-              </div>
-              <div className="mini-stat">
-                <span className="mini-val">Spaceframe</span>
-                <span className="mini-lbl">Aço SAE 4130</span>
-              </div>
-              <div className="mini-stat">
-                <span className="mini-val">Em Obras</span>
-                <span className="mini-lbl">Fase de Construção</span>
-              </div>
+            <div className="mini-stat">
+              <span className="mini-val">Em Obras</span>
+              <span className="mini-lbl">Fase de Construção</span>
             </div>
           </div>
         </div>
@@ -147,7 +109,7 @@ export default function Hero({ onNavigate }) {
           </div>
           <div className="strip-item">
             <span className="strip-label">CONTATO:</span>
-            <span className="strip-value">contato@formulaif.com.br</span>
+            <a href="mailto:formulaifsae@gmail.com" className="strip-value strip-link">formulaifsae@gmail.com</a>
           </div>
           <div className="strip-social">
             <span className="strip-label">SIGA:</span>

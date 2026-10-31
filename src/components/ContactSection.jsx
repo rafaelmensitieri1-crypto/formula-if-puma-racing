@@ -111,8 +111,8 @@ export default function ContactSection({ prefilledSubject = '' }) {
                 <div>
                   <span className="detail-label">E-mail Direto:</span>
                   <p className="detail-val">
-                    <a href="mailto:contato@formulaif.com.br" className="email-link">
-                      contato@formulaif.com.br
+                    <a href="mailto:formulaifsae@gmail.com" className="email-link">
+                      formulaifsae@gmail.com
                     </a>
                   </p>
                 </div>

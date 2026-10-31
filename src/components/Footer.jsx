@@ -83,7 +83,7 @@ export default function Footer({ onNavigate }) {
           </div>
           <div className="footer-contact-item">
             <MailIcon size={18} className="footer-item-icon" />
-            <span>contato@formulaif.com.br</span>
+            <a href="mailto:formulaifsae@gmail.com" className="footer-email-link">formulaifsae@gmail.com</a>
           </div>
           <div className="footer-contact-item">
             <InstagramIcon size={18} className="footer-item-icon" />

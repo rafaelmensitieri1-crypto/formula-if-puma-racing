@@ -246,170 +246,20 @@
 }
 
 /* ==========================================================================
-   Dribbble Split Ribbon Card (Left White, Diagonal Slashes, Right Dark)
+   Hero Team Card (Dark Surface with Team Info & Telemetry Stats)
    ========================================================================== */
-.dribbble-split-card {
-  display: grid;
-  grid-template-columns: 1fr;
+.hero-team-card {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
   border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #ffffff;
-}
-
-@media (min-width: 900px) {
-  .dribbble-split-card {
-    grid-template-columns: 1.15fr 40px 1fr;
-  }
-}
-
-/* Left Part: White Card */
-.split-left-panel {
-  background-color: #ffffff;
-  color: #0f172a;
-  padding: 2rem 2.25rem;
+  padding: 2.25rem 2.5rem;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
 }
 
-.split-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.split-panel-title {
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: 0.05em;
-  color: #0f172a;
-  text-transform: uppercase;
-}
-
-.split-date-tag {
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: #e11d48;
-  letter-spacing: 0.05em;
-}
-
-.split-event-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-@media (min-width: 600px) {
-  .split-event-body {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.track-map-wrapper {
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: var(--radius-md);
-  padding: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.event-info-box {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.event-title {
-  font-size: 1.15rem;
-  font-weight: 900;
-  color: #0f172a;
-}
-
-.event-location {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #64748b;
-}
-
-.event-desc {
-  font-size: 0.85rem;
-  color: #475569;
-  line-height: 1.45;
-  margin-bottom: 0.35rem;
-}
-
-.btn-event-details {
-  align-self: flex-start;
-  background-color: #e11d48;
-  color: #ffffff;
-  border: none;
-  border-radius: var(--radius-sm);
-  padding: 0.45rem 1rem;
-  font-size: 0.775rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: background-color var(--transition-fast);
-}
-
-.btn-event-details:hover {
-  background-color: #be123c;
-}
-
-/* Center Diagonal Slashes */
-.split-diagonal-divider {
-  display: none;
-  position: relative;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-
-@media (min-width: 900px) {
-  .split-diagonal-divider {
-    display: block;
-    background: #0f172a;
-  }
-  .white-slash {
-    position: absolute;
-    top: -20px;
-    left: -15px;
-    width: 25px;
-    height: 150%;
-    background-color: #ffffff;
-    transform: skewX(-25deg);
-  }
-  .red-slash {
-    position: absolute;
-    top: -20px;
-    left: 15px;
-    width: 10px;
-    height: 150%;
-    background-color: #e11d48;
-    transform: skewX(-25deg);
-  }
-}
-
-/* Right Part: Dark Charcoal Card */
-.split-right-panel {
-  background-color: #0f172a;
-  color: #ffffff;
-  padding: 2rem 2.25rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.split-panel-title-red {
+.team-kicker-red {
   font-size: 0.8rem;
   font-weight: 900;
   color: #e11d48;
@@ -420,24 +270,26 @@
 }
 
 .team-headline {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 0.75rem;
 }
 
 .team-bio {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: #94a3b8;
-  line-height: 1.55;
+  line-height: 1.6;
+  max-width: 900px;
   margin-bottom: 1.5rem;
 }
 
 .team-stats-strip {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 2.5rem;
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -487,6 +339,15 @@
 
 .strip-value {
   color: #94a3b8;
+}
+
+.strip-link {
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.strip-link:hover {
+  color: #f8fafc;
 }
 
 .strip-instagram-link {

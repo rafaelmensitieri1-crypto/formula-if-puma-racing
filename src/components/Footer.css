@@ -124,6 +124,16 @@
   flex-shrink: 0;
 }
 
+.footer-email-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-email-link:hover {
+  color: var(--color-primary);
+}
+
 .footer-bottom-bar {
   border-top: 1px solid var(--border-subtle);
   padding: 1.5rem 0;
