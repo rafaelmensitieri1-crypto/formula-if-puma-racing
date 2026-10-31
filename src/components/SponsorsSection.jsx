@@ -82,9 +82,7 @@ export default function SponsorsSection() {
   ]
 
   const currentSponsors = [
-    { name: 'MSR', tag: 'Transformando ideias em produtos de qualidade' },
     { name: 'Supermercado Amigão', tag: 'Economia no seu dia a dia!' },
-    { name: 'MultiArte', tag: 'Comunicação Visual' },
     { name: 'DS SOLIDWORKS', tag: 'Software Oficial de Projeto e Engenharia 3D' }
   ]
 
