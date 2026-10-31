@@ -23,10 +23,10 @@ export default function AboutSection() {
       tabLabel: 'Chassi',
       title: 'Setor de Chassi & Estrutura',
       icon: <ShieldIcon size={24} />,
-      tagline: 'Treliça Tubular Spaceframe em Aço Liga SAE 4130',
+      tagline: 'Treliça Tubular Spaceframe com Tubos 4020',
       description: 'Projeta e constrói a espinha dorsal do monoposto. Dimensiona a treliça espacial tubular garantindo máxima rigidez torcional para apoio da suspensão e total segurança para o piloto, incluindo célula de sobrevivência, santantônios frontal e principal, e atenuador de impacto (Crash-box) testado e certificado.',
       specs: [
-        'Tubulação em aço cromo-molibdênio SAE 4130 com soldagem especializada',
+        'Tubulação estrutural com tubos 4020 e soldagem especializada',
         'Simulação estrutural via Elementos Finitos (FEA) para otimização de peso',
         'Célula de sobrevivência, santantônios e proteções regulamentares',
         'Atenuador de impacto frontal (Crash-box) absorvedor de energia'

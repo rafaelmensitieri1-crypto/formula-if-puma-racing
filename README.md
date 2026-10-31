@@ -19,7 +19,7 @@ Site institucional de alto desempenho para a equipe de Fórmula Student a Combus
 
 1. **Apresentação do Projeto (`#apresentacao`)**:
    - História da equipe, missão, visão e impacto acadêmico/regional.
-   - Subsistemas de engenharia interativos: *Powertrain & Admissão*, *Chassi Spaceframe SAE 4130*, *Suspensão Double Wishbone*, *Telemetria em Tempo Real* e *Gestão & Custos*.
+   - Subsistemas de engenharia interativos: *Powertrain & Admissão*, *Chassi Spaceframe Tubos 4020*, *Suspensão Double Wishbone*, *Telemetria em Tempo Real* e *Gestão & Custos*.
 2. **Fotos do Projeto (`#fotos`)**:
    - Galeria filtrável por categorias (*O Carro*, *Garagem & Oficina*, *Eventos & SECITEC*, *Equipe & Simulador*).
    - Modal Lightbox acessível via teclado (ESC, setas) para visualização ampliada.

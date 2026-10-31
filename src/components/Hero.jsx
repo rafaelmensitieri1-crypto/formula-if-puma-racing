@@ -92,7 +92,7 @@ export default function Hero({ onNavigate }) {
             </div>
             <div className="mini-stat">
               <span className="mini-val">Spaceframe</span>
-              <span className="mini-lbl">Aço SAE 4130</span>
+              <span className="mini-lbl">Tubos 4020</span>
             </div>
             <div className="mini-stat">
               <span className="mini-val">Em Obras</span>

@@ -29,9 +29,9 @@ export default function GallerySection() {
       id: 3,
       category: 'carro',
       title: 'Estrutura Tubular e Célula do Piloto',
-      description: 'Inspeção do chassi em aço cromo-molibdênio SAE 4130 com conformidade rigorosa com o regulamento Fórmula SAE.',
+      description: 'Inspeção do chassi em estrutura tubular com tubos 4020 em conformidade rigorosa com o regulamento Fórmula SAE.',
       src: '/images/puma-feed.jpg',
-      tag: 'Chassi SAE 4130',
+      tag: 'Tubos 4020',
       date: 'Engenharia IFBA'
     },
     {

@@ -8,7 +8,7 @@ export const getCarSpecs = async () => {
         cilindrada: "249,5 cm³",
         potenciaEstimada: "22,6 cv a 7.500 rpm",
         torqueEstimado: "2,28 kgf.m a 6.000 rpm",
-        chassi: "Treliça Tubular Spaceframe (Aço SAE 4130)",
+        chassi: "Treliça Tubular Spaceframe (Tubos 4020)",
         cambio: "6 velocidades sequencial",
         sede: "IFBA Campus Jequié - BA"
       })
