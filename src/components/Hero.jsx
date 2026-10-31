@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronRightIcon, FlameIcon, InstagramIcon } from './Icons'
+import { ChevronRightIcon, InstagramIcon } from './Icons'
 import './Hero.css'
 
 export default function Hero({ onNavigate }) {
@@ -66,10 +66,6 @@ export default function Hero({ onNavigate }) {
                 className="visual-img"
               />
               <div className="visual-gradient-scrim"></div>
-              <div className="visual-floating-badge">
-                <FlameIcon size={18} />
-                <span>MOTOR CB 250 TWISTER • EM CONSTRUÇÃO</span>
-              </div>
             </div>
           </div>
         </div>
