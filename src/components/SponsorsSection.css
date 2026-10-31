@@ -255,15 +255,14 @@
 }
 
 .sponsors-badges-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
-@media (min-width: 768px) {
-  .sponsors-badges-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.sponsors-badges-grid .sponsor-badge-card {
+  flex: 0 1 260px;
 }
 
 .sponsor-badge-card {
