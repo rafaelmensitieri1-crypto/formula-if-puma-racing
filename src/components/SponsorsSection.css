@@ -168,3 +168,185 @@
   margin-top: 2px;
 }
 
+/* ── Reasons heading ── */
+.reasons-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-subheading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.section-subtext {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* ── Tier title row (name + price inline) ── */
+.tier-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.tier-price-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+/* ── Tiers kicker ── */
+.tiers-kicker {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+/* ── Tiers grid: 3 columns (C, B, A) ── */
+@media (min-width: 1024px) {
+  .tiers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Current sponsors box ── */
+.current-sponsors-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.current-sponsors-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sponsors-kicker {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.sponsors-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.4rem;
+}
+
+.sponsors-subtext {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.sponsors-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .sponsors-badges-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.sponsor-badge-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  transition: border-color var(--transition-fast);
+}
+
+.sponsor-badge-card:hover {
+  border-color: var(--border-primary);
+}
+
+.sponsor-name {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.sponsor-tag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ── Contact bar ── */
+.sponsorship-contact-bar {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.contact-bar-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.contact-bar-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.leadership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.leader-pill {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.leader-pill a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.leader-pill a:hover {
+  text-decoration: underline;
+}
+
+.email-pill {
+  gap: 0.5rem;
+}
+
+.email-pill a {
+  color: var(--color-accent);
+}
+
