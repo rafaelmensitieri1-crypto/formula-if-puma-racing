@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { InstagramIcon, MailIcon, MapPinIcon, ExternalLinkIcon, CheckIcon } from './Icons'
+import { InstagramIcon, LinkedInIcon, MailIcon, MapPinIcon, ExternalLinkIcon, CheckIcon } from './Icons'
 import './ContactSection.css'
 
 export default function ContactSection({ prefilledSubject = '' }) {
@@ -67,20 +67,20 @@ export default function ContactSection({ prefilledSubject = '' }) {
               </div>
             </a>
 
-            {/* Linktree Card */}
+            {/* LinkedIn Card */}
             <a 
-              href="https://linktr.ee/formulaif" 
+              href="https://www.linkedin.com/company/f%C3%B3rmula-if-sae/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="social-feature-card linktree-card"
+              className="social-feature-card linkedin-card"
             >
-              <div className="social-icon-wrapper linktree-icon">
-                <span>🔗</span>
+              <div className="social-icon-wrapper linkedin-icon">
+                <LinkedInIcon size={26} />
               </div>
               <div className="social-card-text">
-                <span className="social-card-label">HUB DE LINKS</span>
-                <span className="social-card-handle">linktr.ee/formulaif</span>
-                <span className="social-card-sub">Processos seletivos, formulários e editais</span>
+                <span className="social-card-label">LINKEDIN OFICIAL</span>
+                <span className="social-card-handle">Fórmula IF SAE</span>
+                <span className="social-card-sub">Conexões corporativas, equipe e parcerias</span>
               </div>
               <div className="social-card-arrow">
                 <ExternalLinkIcon size={20} />

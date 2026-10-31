@@ -14,7 +14,7 @@ Este documento registra as funcionalidades entregues, os débitos técnicos e o 
   - Powertrain, Chassi, Eletrônica, Design & Aerodinâmica, Freio & Suspensão, Comunicações e Secretaria.
 - [x] Galeria de fotos filtrável por categorias com modal Lightbox e navegação por teclado (ESC, setas).
 - [x] Tabela de cotas de patrocínio (Bronze, Prata, Ouro e Diamante Master) com redirecionamento contextual para contato.
-- [x] Seção de contatos com cards diretos para Instagram (@formulaifsae), Linktree e formulário validado.
+- [x] Seção de contatos com cards diretos para Instagram (@formulaifsae), LinkedIn Oficial e formulário validado.
 - [x] Conformidade de acessibilidade WCAG 2.2 (alto contraste, alvos de toque >= 44px, `prefers-reduced-motion`).
 - [x] Remoção de arquivos órfãos de template (`Features`, `Header`, `Home`).
 - [x] Configuração da política de execução do PowerShell no ambiente Windows local.

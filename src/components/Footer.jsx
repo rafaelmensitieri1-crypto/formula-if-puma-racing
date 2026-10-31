@@ -1,5 +1,5 @@
 import React from 'react'
-import { PumaLogoIcon, InstagramIcon, MailIcon, MapPinIcon } from './Icons'
+import { PumaLogoIcon, InstagramIcon, LinkedInIcon, MailIcon, MapPinIcon } from './Icons'
 import './Footer.css'
 
 export default function Footer({ onNavigate }) {
@@ -36,13 +36,13 @@ export default function Footer({ onNavigate }) {
               <InstagramIcon size={20} />
             </a>
             <a 
-              href="https://linktr.ee/formulaif" 
+              href="https://www.linkedin.com/company/f%C3%B3rmula-if-sae/" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="Linktree da equipe Fórmula IF"
+              aria-label="LinkedIn oficial da equipe Fórmula IF SAE"
               className="footer-social-icon"
             >
-              🔗
+              <LinkedInIcon size={20} />
             </a>
           </div>
         </div>

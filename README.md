@@ -6,7 +6,8 @@ Site institucional de alto desempenho para a equipe de Fórmula Student a Combus
 
 ## 📸 Identidade Visual & Redes
 - **Instagram Oficial:** [@formulaifsae](https://instagram.com/formulaifsae)
-- **Hub de Links:** [linktr.ee/formulaif](https://linktr.ee/formulaif)
+- **LinkedIn Oficial:** [Fórmula IF SAE](https://www.linkedin.com/company/f%C3%B3rmula-if-sae/)
+- **E-mail Institucional:** [formulaifsae@gmail.com](mailto:formulaifsae@gmail.com)
 - **Localização:** IFBA Campus Jequié - Bahia, Brasil
 - **Modalidade:** Fórmula SAE Brasil Combustion (Veículo Monoposto a Combustão)
 - **Status do Protótipo:** Em Construção / Fase de Manufatura
@@ -27,8 +28,8 @@ Site institucional de alto desempenho para a equipe de Fórmula Student a Combus
    - Cotas estruturadas: *Cota Diamante (Master)*, *Cota Ouro*, *Cota Prata* e *Cota Bronze / Apoio Técnico*.
    - Chamadas diretas para propostas personalizadas e captação de parceiros.
 4. **Contatos do Projeto (`#contatos`)**:
-   - Cartões diretos para o Instagram `@formulaifsae` e Linktree.
-   - Informações de endereço físico e e-mail institucional.
+   - Cartões diretos para o Instagram `@formulaifsae` e LinkedIn Oficial.
+   - Informações de endereço físico e e-mail institucional (`formulaifsae@gmail.com`).
    - Formulário de contato validado com pré-seleção de cotas de patrocínio.
 
 ---
