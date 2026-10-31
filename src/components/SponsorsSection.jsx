@@ -2,7 +2,7 @@ import React from 'react'
 import { CheckIcon, TrophyIcon, UsersIcon, ShieldIcon } from './Icons'
 import './SponsorsSection.css'
 
-export default function SponsorsSection({ onSelectSponsorTier }) {
+export default function SponsorsSection() {
   const tiers = [
     {
       id: 'bronze',
@@ -130,33 +130,8 @@ export default function SponsorsSection({ onSelectSponsorTier }) {
                   </li>
                 ))}
               </ul>
-
-              <button
-                type="button"
-                className={`tier-cta-btn ${tier.highlight ? 'btn-primary' : 'btn-outline'}`}
-                onClick={() => onSelectSponsorTier(tier.name)}
-              >
-                Apoiar Nesta Cota
-              </button>
             </div>
           ))}
-        </div>
-
-        {/* Custom Support Banner */}
-        <div className="custom-sponsor-banner">
-          <div className="custom-banner-content">
-            <h4 className="custom-banner-title">Precisa de uma proposta personalizada ou apoio técnico?</h4>
-            <p className="custom-banner-text">
-              Também aceitamos parcerias em serviços, usinagem CNC, doação de softwares, ferramentas e consultoria.
-            </p>
-          </div>
-          <button
-            type="button"
-            className="btn btn-primary"
-            onClick={() => onSelectSponsorTier('Apoio Técnico Personalizado')}
-          >
-            Falar com a Diretoria de Gestão
-          </button>
         </div>
       </div>
     </section>

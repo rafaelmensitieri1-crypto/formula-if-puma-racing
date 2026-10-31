@@ -10,22 +10,12 @@ import './App.css'
 
 function App() {
   const [activeTab, setActiveTab] = useState('apresentacao')
-  const [selectedSponsorTier, setSelectedSponsorTier] = useState('')
 
   const handleNavigate = (sectionId) => {
     setActiveTab(sectionId)
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
-  const handleSelectSponsorTier = (tierName) => {
-    setSelectedSponsorTier(`Interesse na ${tierName}`)
-    setActiveTab('contatos')
-    const contactElement = document.getElementById('contatos')
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -46,7 +36,7 @@ function App() {
         <GallerySection />
 
         {/* 3. Patrocínios e Parcerias */}
-        <SponsorsSection onSelectSponsorTier={handleSelectSponsorTier} />
+        <SponsorsSection />
 
         {/* 4. Contatos do Projeto */}
         <ContactSection />
